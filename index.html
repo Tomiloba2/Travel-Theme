@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="node_modules/dist/css/materialize.min.css">
+    <title>Travel-Agency</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      #input-search{
+        width: 30vw;
+        border-radius: 20px;
+      }
+      #input-search::placeholder{
+        color: green;
+        font-size: 2rem;
+      }
+      .brand-logo{
+        padding-left: 2vw !important
+      }
+    </style>
+</head>
+<body id="home" class="scrollspy">
+  <header>
+    <div class="navbar-fixed">
+      <!--below is the navbar-->
+      <nav class="nav-wrapper blue">
+        <label for="#" class="brand-logo">T&O Travels</label>
+        <a href="#" class="sidenav-trigger" data-target="mobile">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="hide-on-med-and-down right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#porpular">Porpular-Places</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!--mobile nav-->
+        <ul class="sidenav blue" id="mobile">
+          <li><a href="#home" class="white-text">Home</a></li>
+          <li><a href="#search" class="white-text">Search</a></li>
+          <li><a href="#porpular" class="white-text">Porpular-Places</a></li>
+          <li><a href="#contact" class="white-text">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--below are the slides-->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="Assset/beach1.jpg" alt="beach1" class="responsive-img">
+          <div class="caption center-align">
+            <h3>
+              T&O TRAVELS CONSULT SERVICES
+            </h3>
+          </div>
+        </li>
+        <!--first-->
+        <li>
+          <img src="Assset/beach3.jpg" alt="beach3" class="responsive-img">
+          <div class="caption left-align">
+            <h3>
+              STUDY//WORK//LIVE IN CANADA,USA & ASIA
+            </h3>
+          </div>
+        </li>
+        <!--second-->
+        <li>
+          <img src="Assset/beach4.jpg" alt="beach4" class="responsive-img">
+          <div class="caption right-align">
+            <h3>
+              T&O TRAVELS CONSULT SERVICES
+            </h3>
+          </div>
+        </li>
+        <!--thrid-->
+        <li>
+          <img src="Assset/canada4.jpg" alt="canada4" class="responsive-img">
+          <div class="caption center-align">
+            <h3>
+              AFFORDABLE AND BUDGET FRIENDLY PRICES
+            </h3>
+          </div>
+        </li>
+        <!--fourth-->
+      </ul>
+    </div>
+    <!--end of slides-->
+    <!--below is the search area-->
+    <section id="search" class="scrollspy">
+      <div class="section-search row blue center">
+        <div class="col s12">
+          <h5 class="white-text">Search Destination</h5>
+        </div>
+        <div class="col s12">
+          <!--begining of search form-->
+          <form action="#">
+          <div class="input-field">
+            <i class="material-icons prefix white-text search-icon">search</i>
+            <input type="text" class="white autocomplete blue-text flow-text" id="input-search" placeholder="Country">
+          </div>
+          </form>
+          <!--end of search form-->
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!--icons-->
+    <section class="container">
+      <section class="section section-icons center">
+        <div class="row">
+          <div class="col s12 m4 l4 pull-l1 card-panel">
+            <i class="material-icons large blue-text">store</i>
+            <h4>Travel shop</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque dolorem omnis odit aperiam minus
+               perspiciatis.
+            </p>
+          </div>
+          <div class="col s12 m4 l4 card-panel">
+            <i class="material-icons large blue-text">room</i>
+            <h4>Pick where?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque dolorem omnis odit aperiam minus
+               perspiciatis.
+            </p>
+          </div>
+          <div class="col s12 m4 l4 push-l1 card-panel">
+            <i class="material-icons large blue-text">airplanemode_active</i>
+            <h4>Fly cheap</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque dolorem omnis odit aperiam minus
+               perspiciatis.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!--below{porpular places}-->
+    <section id="porpular" class="section section-porpular scrollspy">
+      <div class="container">
+        <h3 class="blue-text center">Porpular-Places</h3>
+        <div class="row">
+          <div class="col s12 m4 l4 card">
+            <div class="card-image">
+              <img src="Assset/beach1.jpg" alt="USA" class="responsive-img">
+              <span class="card-title">USA</span>
+            </div>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas 
+              asperiores cum optio consequatur nisi! Illo quidem quas ex ali
+            </p>
+          </div>
+          <!--second-->
+          <div class="col s12 m4 l4 card">
+            <div class="card-image">
+              <img src="Assset/beach3.jpg" alt="Brazil" class="responsive-img">
+              <span class="card-title">Brazil</span>
+            </div>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas 
+              asperiores cum optio consequatur nisi! Illo quidem quas ex aliq
+            </p>
+          </div>
+          <!--thrid-->
+          <div class="col s12 m4 l4 card">
+            <div class="card-image">
+              <img src="Assset/beach4.jpg" alt="CANADA" class="responsive-img">
+              <span class="card-title">CANADA</span>
+            </div>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas 
+              asperiores cum optio consequatur nisi! Illo quidem quas ex aliquam consectetur mollitia quos sequi illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--font-awesom links-->
+    <section class="section section-follow blue white-text center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>T&O Travel</h3>
+            <p>
+              follow us on social media for more special offers
+            </p>
+          </div>
+          <div class="col s12">
+            <a href="#" class="white-text"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="white-text"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="white-text"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--photo gallery-->
+    <section class="section">
+      <div class="container center blue-text">
+        <h3>Photo Gallery</h3>
+        <div class="row">
+          <div class="col s12 m4"><img src="Assset/beach1.jpg" alt="beach1" class="material-box responsive-img"></div>
+          <div class="col s12 m4"><img src="Assset/beach3.jpg" alt="beach3" class="material-box responsive-img"></div>
+          <div class="col s12 m4"><img src="Assset/srbrub1.jpg" alt="beach4" class="material-box responsive-img"></div>
+        </div>
+        <!--first-->
+      <div class="row">
+        <div class="col s12 m4"><img src="Assset/surburb2.jpg" alt="canada5" class="material-box responsive-img"></div>
+        <div class="col s12 m4"><img src="Assset/canada4.jpg" alt="canada4" class="material-box responsive-img"></div>
+        <div class="col s12 m4"><img src="Assset/canada1.jpg" alt="canada1" class="material-box responsive-img"></div>
+      </div>
+      <!--second-->
+    <div class="row">
+      <div class="col s12 m4"><img src="Assset/canada5.jpg" alt="surburb2" class="material-box responsive-img"></div>
+      <div class="col s12 m4"><img src="Assset/surburb3.jpg" alt="canada5" class="material-box responsive-img"></div>
+      <div class="col s12 m4"><img src="Assset/beach4.jpg" alt="canada4" class="material-box responsive-img"></div>
+    </div>
+    <!--thrid-->
+  </div>
+    </section>
+    <!--end of photo gallery-->
+    <section class="contact section-contact scrollspy" id="contact">
+      <div class="container center">
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="center blue-text white card-panel">
+              <i class="material-icons large">email</i>
+              <h3>Contact-Us</h3>
+              <p class="center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae enim eos fugiat, cumque dolores maiores,
+                 voluptate necessitatibus
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 card-panel center">
+            <h5 class="blue-text">Please fill out the form</h5>
+            <div class="input-field">
+              <i class="material-icons prefix blue-text">person</i>
+              <input type="text" id="username" required>
+              <label for="username">User Name</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix blue-text">email</i>
+              <input type="email" id="email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix blue-text">password</i>
+              <input type="password" id="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <p>
+              <label>
+              <input type="checkbox" id="checkbox" class="with-gap">
+              <span>Forgot-password</span>
+              </label>
+              </p>
+            </div>
+            <div class="input-field">
+              <button class="btn blue large" type="submit">SEND</button>
+            </div>
+          </div>
+        </div>
+        <!--for collection-->
+        <ul class="collection blue flow-text">
+          <li class="collection-items white-text">T&0 travels Consult</li>
+         <li class="collection-items white-text">Address:No 35 Wisdom Estate</li>
+          <li class="collection-items white-text">Email:T&O@gmail.com</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="section section-footer grey center white-text">
+    <p class="flow-text footer-copywright">T&O Travels consult 2022&copy; </p>
+  </footer>
+  <script src="node_modules/dist/js/jquery.min.js"></script>
+  <script src="node_modules/dist/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.slider').slider({indicators:false});
+      $('.material-box').materialbox();
+     $('.autocomplete').autocomplete({
+      data:{
+        "Canada":null,"usa":null,"Europe":null,"Australia":null,'Nigeria':null,"Germany":null
+      },
+      limit:3
+     });
+    });
+    $('.scrollspy').scrollSpy();
+  </script>
+</body>
+</html>
