@@ -15,16 +15,25 @@
         margin: 0;
         padding: 0;
       }
+      #mobile{
+        background-color: white !important
+      }
       #input-search{
-        width: 30vw;
+        width: 40vw;
         border-radius: 20px;
       }
       #input-search::placeholder{
-        color: green;
+        color:blue;
         font-size: 2rem;
       }
       .brand-logo{
         padding-left: 2vw !important
+      }
+      .medium{
+        border: 1px solid blue;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
       }
     </style>
 </head>
@@ -33,7 +42,7 @@
     <div class="navbar-fixed">
       <!--below is the navbar-->
       <nav class="nav-wrapper blue">
-        <label for="#" class="brand-logo">T&O Travels</label>
+        <label for="#" class="brand-logo">T&O</label>
         <a href="#" class="sidenav-trigger" data-target="mobile">
           <i class="material-icons">menu</i>
         </a>
@@ -44,11 +53,11 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <!--mobile nav-->
-        <ul class="sidenav blue" id="mobile">
-          <li><a href="#home" class="white-text">Home</a></li>
-          <li><a href="#search" class="white-text">Search</a></li>
-          <li><a href="#porpular" class="white-text">Porpular-Places</a></li>
-          <li><a href="#contact" class="white-text">Contact</a></li>
+        <ul class="sidenav" id="mobile">
+          <li><a href="#home" class="blue-text">Home</a></li>
+          <li><a href="#search" class="blue-text">Search</a></li>
+          <li><a href="#porpular" class="blue-text">Porpular-Places</a></li>
+          <li><a href="#contact" class="blue-text">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -156,8 +165,7 @@
               <span class="card-title">USA</span>
             </div>
             <p class="card-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas 
-              asperiores cum optio consequatur nisi! Illo quidem quas ex ali
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam
             </p>
           </div>
           <!--second-->
@@ -167,8 +175,7 @@
               <span class="card-title">Brazil</span>
             </div>
             <p class="card-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas 
-              asperiores cum optio consequatur nisi! Illo quidem quas ex aliq
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam
             </p>
           </div>
           <!--thrid-->
@@ -178,8 +185,7 @@
               <span class="card-title">CANADA</span>
             </div>
             <p class="card-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas 
-              asperiores cum optio consequatur nisi! Illo quidem quas ex aliquam consectetur mollitia quos sequi illum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus magnam at veritatis sunt quas
             </p>
           </div>
         </div>
@@ -190,16 +196,16 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h3>T&O Travel</h3>
+            <h3>T&O</h3>
             <p>
               follow us on social media for more special offers
             </p>
           </div>
           <div class="col s12 container">
-            <div class="row" style="margin-left:20vw;">
-              <a href="#" class="white-text"><i class="col m2 fa fa-facebook medium"></i></a>
+            <div class="row" style="margin-left:25vw;margin-top: 1vw;">
+              <a href="#" class="white-text "><i class="col m2 fa fa-facebook medium"></i></a>
               <a href="#" class="white-text"><i class="col m2 fa fa-linkedin medium"></i></a>
-              <a href="#" class="white-text"><i class="col m2 fa fa-twitter medium"></i></a>
+              <a href="#" class="white-text "><i class="col m2 fa fa-twitter medium"></i></a>
             </div>
           </div>
         </div>
@@ -294,9 +300,10 @@
       $('.material-box').materialbox();
      $('.autocomplete').autocomplete({
       data:{
-        "Canada":null,"usa":null,"Europe":null,"Australia":null,'Nigeria':null,"Germany":null
+        "Canada":null,"usa":null,"Europe":null,"Australia":null,'Nigeria':null,"Germany":null,'Ghana':null,
+        "France":null,"Brazil":null
       },
-      limit:3
+      limit:5
      });
     });
     $('.scrollspy').scrollSpy();
